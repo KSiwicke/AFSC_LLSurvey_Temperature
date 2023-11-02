@@ -1,0 +1,38 @@
+#Ecosystem and Socioeconomic Profile (ESP) indicator contribution for stocks managed under the North Pacific Fisheries Management Council
+#This template is required for updating ESP indicator contribution information  
+#There are two required sections to check or update (see below): Indicator Review and Indicator Data  
+#Please fill in the text (surrounded by " ") or data as values in the line after each field marked with a # and capitalized name (e.g., #INDICATOR_NAME, the next line should be the name of your indicator, for example "Annual_Arrowtooth_Biomass_GOA_Model") 
+#Note that all fields are described in the Alaska ESP User Guide, please see pdf attached to indicator assignment email for more details
+
+#INDICATOR_REVIEW ----------------------------------------------------------------------------------------
+#SUBMISSION_YEAR - Current year of contribution submission
+2023
+
+#INDICATOR_NAME - Composite key (meaning this must be unique to the indicator) based on the ESP naming convention and used for joining ESP data tables. Please see email with your indicator names, and copy/paste name to this location. Note: this name must match the ESP records provided in the email, please do not change. Questions, contact kalei.shotwell@noaa.gov
+"Summer_Temperature_250m_GOA_Survey"
+
+#DESCRIPTION - Brief description of the indicator and why it is important to groundfish fishery management. Please make sure this description includes information on the spatial distribution of the indicator and how the data for the indicator are collected. The spatial resolution can be a cell size dimension (e.g., 5 km resolution for gridded data) or area of sampling for a survey (e.g., Shelikof Strait). The data collection method can be brief (e.g., survey name and gear type, satellite sensor and version, stock assessment model output, fishery observer data, community reports, etc.) and can include a reference to methods detailed elswhere. (Limit to 4000 characters)  
+"Summer temperature profiles were recorded during the annual longline survey along the continental slope using an SBE39 (Seabird Electronics) attached to the groundline (Siwicke, 2022). Interpolation between actual depth recordings in a profile was conducted using weighted parabolic interpolation (Reiniger and Ross, 1968). The mean temperature of 1-m interpolations from 246 to 255 meters was used as the station level value, and these are treated as regional replicates to determine a area-weighted mean temperature at 250-m depth for the western, central, and eastern GOA sablefish management areas (for more details, see Siwicke, 2022). This GOA index is the mean of the annual anomalies from each sablefish management area, and because this time series is still short (< 20 years), the long-term mean is still being updated every year, though after 20 years, this will likely be fixed at the first 20 years (2005-2024). The 250-m depth was selected to represent deeper water at the shelf-slope break where adult sablefish are typically sampled. Annual values come from this extent: Latitude (54.4 to 59.6) and Longitude (-157.8 to -134.0) and the survey is conducted by the Marine Ecology and Stock Assessment (MESA) program, Auke Bay Laboratories, Alaska Fisheries Science Center."
+
+#STATUS_TRENDS - Information on the current status of the indicator in the context of historical trends. This is similar to the Ecosystem Status Report contribution (Limit to 4000 characters)
+"The current trend is down from last year, but this is the seventh consecutive year with above average subsurface temperature."
+
+#FACTORS - Information on the potential causes for observed trends and current status (focus on most recent year). This is similar to the Ecosystem Status Report contribution. (Limit to 4000 characters)
+"Subsurface waters below mixed layers can absorb and store heat. These changes do not occur at the same timescales as changes in surface water temperaturess, often showing delayed responses by a year or more. These temperature changes are also very small compared to surface waters. The warmer that subsurface waters become, the less cooling capacity they have to absorb heat from surface waters."
+
+#IMPLICATIONS - Information that briefly answers these questions: What are the implications or impacts of the observed trends on the ecosystem or ecosystem components? What do the trends mean? Why are they important? How can this information be used to inform groundfish management decisions? This is similar to the Ecosystem Status Report contribution. (Limit to 4000 characters)   
+"Implications of changes in subsurface temperatures are not well know, but could impact biology, species distributions, or prey presence, qualty and abundance."
+
+#REFERENCES - Include any full references that are associated with the indicator. This may include data references such as from an ERDDAP webpage or literature cited (plus the DOI where possible). Please also provide the full reference if there is an associated Ecosystem Status Report contribution that provides more details on the indicator.
+"Reiniger, R., and C. Ross. 1968. A method of interpolation with application to oceanographic data. Deep Sea Research 15:185–193. DOI: https://doi.org/10.1016/0011-7471(68)90040-5
+Siwicke, K. 2022. Summary of temperature and depth recorder data from the Alaska Fisheries Science Center’s longline survey (2005–2021). U.S. Dep. Commer., NOAA Tech. Memo. NMFSAFSC-437, 74 p. DOI: https://doi.org/10.25923/9ckj-0665"
+
+#INDICATOR_DATA ----------------------------------------------------------------------------------------------
+#YEAR - List of years for the indicator contribution 
+2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018
+2019	2020	2021	2022	2023
+
+#INDICATOR_VALUE - List of data values for the indicator contribuion (must match the year list length)
+-0.155444113	0.205036605	-0.175362296	-0.009315683	-0.002439033	-0.390058490	0.086706845	
+-0.083628857	-0.123672028	0.089955001	-0.164281248	-0.205529777	0.203944155	0.036785047	
+0.234156283	0.141679624	0.054443476	0.171760623	0.085263866
