@@ -61,16 +61,20 @@ goa.esp = AllYrWt2 %>% filter( !NPFMC_Sablefish_Mgmt_Area=="Bering Sea" & !NPFMC
 
 ggplot(AllYr2, aes(Year, temp))+ #, col=Geographic_Area_Name
   geom_hline(data = WtMean, aes(yintercept = Mean), col = "darkolivegreen", lty = 2) +
-  geom_point(size = 0.5, col = "gray20") +
+  geom_point(size = 0.5, col = "gray60") +
   geom_line(data = goa.esp, aes(x = Year, y = Temp), col = "blue") +
   geom_point(data = AllYrWt2, aes(x = Year, y = Temp), col = "red") +
-  ylab(expression(paste('Temperature (',~degree,'C)',sep=''))) +
+  ylab('Temperature (°C)') +
   facet_grid(~NPFMC_Sablefish_Mgmt_Area) +
+  # ggtitle("Area-weighted temperature (246-255 m bin)") +
   theme_bw() +
-  theme(axis.title=element_text(size=14), axis.text=element_text(size=12), strip.background=element_blank(), 
+  theme(axis.title=element_text(size=14), 
+        axis.text=element_text(size=14), 
+        strip.text = element_text(size=14), 
+        strip.background=element_blank(), 
         panel.grid.minor = element_blank()) 
 
-ggsave("output/PT_cruise_Report_Fig.png", width=18, height=4.5)
+ggsave("output/PT_cruise_Report_Fig2.png", width=14, height=4.5)
 
 esp.mean <- goa.esp %>% 
   group_by(NPFMC_Sablefish_Mgmt_Area) %>% 
